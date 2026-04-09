@@ -10,15 +10,9 @@
 
 ## 这是什么
 
-这个仓库不是“给角色套一层萌系语气”的表面模仿，也不是“语录拼贴机”。
-
-`ace-taffy` 后面放的是三套东西：
-
 - 可直接安装使用的 skill 本体：`SKILL.md`、`persona.md`、`references/`
 - 能继续刷新微博 / B 站公开数据、做字幕转写和筛语料的工具：`tools/`
 - 用来保留出处、统计、审计和训练候选摘要的轻量材料：`sources/processed/`、`submission/`
-
-公开仓库默认不提交大体积原始媒体、全文转写和训练 JSONL，只保留足够复核和继续维护的蒸馏结果。
 
 ## 当前快照
 
@@ -75,14 +69,14 @@ git clone https://github.com/ly-xxx/taffy.skill .claude/skills/ace-taffy
 
 ### Codex
 
-最稳的方式是直接点名 `ace-taffy`：
+你可以直接点名 `ace-taffy`：
 
 ```text
 请使用 ace-taffy skill，帮我写一条今晚开播《哀鸿》的微博预告。
 ```
 
 ```text
-使用 ace-taffy skill，把这段普通口播改得更像永雏塔菲公开营业时会说的话，不要编造最新动态。
+使用 ace-taffy skill，把这段普通口播改得更像永雏塔菲公开营业时会说的话。
 ```
 
 ### Claude Code
@@ -105,7 +99,7 @@ Claude Code 里可以直接这样调用：
 
 ```bash
 codex exec --skip-git-repo-check \
-  "请使用 ace-taffy skill，只输出最终成稿，不要解释。写一条对粉丝评论“今天怎么这么晚才来”的回复，要像公开互动语境。不要编造最新事实。"
+  "请使用 ace-taffy skill，只输出最终成稿，不要解释。写一条对粉丝评论“今天怎么这么晚才来”的回复。"
 ```
 
 只要输出开始明显使用 `taffy` / `塔菲` 的自称，并且没有机械堆 `喵`，基本就说明已经调起成功。
@@ -128,7 +122,7 @@ codex exec --skip-git-repo-check \
 你可以直接这样提：
 
 ```text
-请使用 ace-taffy skill，帮我写一条今晚开播《哀鸿》的微博预告，要有塔菲那种先抛情绪再补信息的感觉
+请使用 ace-taffy skill，帮我写一条今晚开播《哀鸿》的微博预告
 ```
 
 ```text
@@ -136,7 +130,7 @@ codex exec --skip-git-repo-check \
 ```
 
 ```text
-使用 ace-taffy，把这段普通口播改成更像公开营业语境下的塔菲说法，但不要编造最新动态
+使用 ace-taffy，把这段普通口播改成更像公开营业语境下的塔菲说法
 ```
 
 ## 真实运行示例
