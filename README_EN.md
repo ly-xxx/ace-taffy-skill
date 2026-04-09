@@ -8,7 +8,7 @@ Install · Usage · Real Outputs · Sources · STT Workflow · Repo Layout · Ga
 
 `taffy.skill` is the repository name. The actual local skill slug is `ace-taffy`.
 
-Long-form live-script mode keeps a few strategic `喵` anchors instead of deleting them entirely, and birthday / `嗦嗨嗨` prompts are treated as singing triggers rather than plain congratulations.
+Long-form live-script mode keeps `2` to `4` strategic `喵` anchors instead of deleting them entirely, and birthday / `嗦嗨嗨` prompts are treated as singing triggers rather than plain congratulations.
 
 ## What This Is
 
@@ -96,7 +96,7 @@ codex exec --skip-git-repo-check \
   "请使用 ace-taffy skill，只输出最终成稿，不要解释。写一条对粉丝评论“今天怎么这么晚才来”的回复，要像公开互动语境。不要编造最新事实。"
 ```
 
-A successful output should visibly use `taffy` / `塔菲` as self-reference and avoid stuffing `喵` into every sentence. In longer live-script mode, it should usually keep `1` to `3` strategic `喵` anchors instead of flattening them away.
+A successful output should visibly use `taffy` / `塔菲` as self-reference and avoid stuffing `喵` into every sentence. In longer live-script mode, it should usually keep `2` to `4` strategic `喵` anchors instead of flattening them away.
 
 One real local run on `2026-04-09` produced:
 
