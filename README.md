@@ -2,7 +2,9 @@
 
 # 永雏塔菲.skill
 
-> 基于微博与 Bilibili 官方公开内容蒸馏的公开人物 skill，适合公开语境对话、开播预告、动态文案、短视频口播，以及中文视频字幕工作流。
+> “他们都叫我小唐人！他们都叫我臭唐氏！说谁是唐氏呢！！！骂谁唐氏！”
+> 
+> “关注永雏塔菲喵，关注永雏塔菲谢谢喵！”
 
 [![Skill: ace-taffy](https://img.shields.io/badge/Skill-ace--taffy-ff6b81)](#quickstart)
 [![Version: v0.2.0](https://img.shields.io/badge/Version-v0.2.0-111827)](./SKILL.md)
@@ -13,13 +15,12 @@
 
 <br>
 
-**让 Codex / Claude Code 在公开营业语境里，更像塔菲地聊天、写文案、改口播。**
+**让你的 Codex / Claude Code 一键成为永雏塔菲，**
+学会包括经典的喵喵口癖，专注RP（RolePlay）的taffy自称，还有这个时代非常难得的虚拟营业模式，更像塔菲地聊天、写文案。同时，得利于对永雏塔菲用词习惯的蒸馏，我们显著提升了永雏塔菲切片视频中的语音识别正确率。**
 
 <br>
 
-`taffy.skill` 是本地目录名；真正安装后调用的 skill 名字是 `ace-taffy`。
-
-[快速开始](#quickstart) · [真实示例](#examples) · [数据来源](#sources) · [STT 工作流](#workflow) · [仓库结构](#structure) · [Gallery 提交](#gallery)
+[快速开始](#quickstart) · [真实示例](#examples) · [数据来源](#sources) · [STT 工作流](#workflow) · [仓库结构](#structure)
 
 中文（主 README） · [English](./README_EN.md)
 
@@ -27,13 +28,13 @@
 
 ---
 
-## 这个 skill 做什么
+## 走进塔菲的世界
 
-| 模块 | 这里提供什么 | 明确不做什么 |
+| 模块 | 我们提供什么 | 我们不做什么 |
 |---|---|---|
-| Persona | 蒸馏塔菲在公开平台上稳定、可复核的人格与表达方式 | 不碰中之人、现实身份、未证实八卦 |
+| Persona | 蒸馏永雏塔菲在公开平台上稳定、可复核的人格与表达方式 | 不碰中之人、现实身份、未证实八卦 |
 | Sources | 只使用微博 / B 站官方公开内容与直播间元数据 | 不把二创搬运、争议帖、录播站标题当一手事实 |
-| Output Protocol | 约束自称、`喵`、句式和公开营业节奏 | 不把角色写成“每句都喵”的萌妹模板 |
+| Output Protocol | 约束自称、`喵`、句式和公开营业节奏 | 不把角色写成“每句都喵”的机械模板 |
 | STT Workflow | 维护公开视频转写、审计、训练候选与样式库 | 不提交大体积媒体、全文转写和训练 JSONL |
 
 ## 当前快照
@@ -317,15 +318,6 @@ taffy.skill/
 - `references/self-reference.md`：自称规则，默认不用“我”
 - `sources/processed/`：轻量统计、审计和训练候选摘要
 - `tools/`：采集、转写、审计和构建工具
-
-<a id="gallery"></a>
-## 提交到 Gallery
-
-如果你准备把这个 skill 提交到 `colleague-skill-site`：
-
-- Issue 草稿：`submission/submit-skill-issue.md`
-- Gallery 推断条目：`submission/gallery-entry.inferred.yaml`
-- Skill 文件链接：`https://github.com/ly-xxx/ace-taffy-skill/blob/main/SKILL.md`
 
 ## License
 
