@@ -359,4 +359,12 @@ MIT，见 `LICENSE`。
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ly-xxx/ace-taffy-skill&type=Date)](https://star-history.com/#ly-xxx/ace-taffy-skill&Date)
+## Star History
+
+<a href="https://www.star-history.com/?repos=ly-xxx%2Face-taffy-skill&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ly-xxx/ace-taffy-skill&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ly-xxx/ace-taffy-skill&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ly-xxx/ace-taffy-skill&type=date&legend=top-left" />
+ </picture>
+</a>
