@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-09",
+  "selection_mode": "best_by_bvid",
+  "recommended_filter": {
+    "models": [
+      "large-v3"
+    ],
+    "min_quality_score": 55.0
+  },
+  "train_ready_records": 1434,
+  "high_only_records": 1809,
+  "recommended_records": 1377,
+  "recommended_bvid_count": 13,
+  "public_tables": {
+    "selected_transcripts": "sources/processed/training/selected_transcripts.tsv",
+    "audit_best_by_bvid": "sources/processed/transcript-audit-best-by-bvid.tsv"
+  },
+  "top_bvids": [
+    {
+      "bvid": "BV1ty4y1T7Vy",
+      "title": "【自首】从商场出来后发现不小心偷了东西……",
+      "quality_score": 98.06,
+      "usability": "high"
+    },
+    {
+      "bvid": "BV1Cb4y1r7uL",
+      "title": "总被吐槽说话口齿不清的taffy一气之下发明了这个……！",
+      "quality_score": 97.59,
+      "usability": "high"
+    },
+    {
+      "bvid": "BV1VR4y1375h",
+      "title": "如何快速融入V圈？V圈常用语小课堂",
+      "quality_score": 96.98,
+      "usability": "high"
+    },
+    {
+      "bvid": "BV1sB4y1K7Du",
+      "title": "【全熟】王牌级首播出道回！taffy从1885年来开始直播了！",
+      "quality_score": 93.91,
+      "usability": "high"
+    },
+    {
+      "bvid": "BV1AP4y147tx",
+      "title": "地球灭亡前60秒！taffy会做什么？（全结局）",
+      "quality_score": 92.72,
+      "usability": "high"
+    },
+    {
+      "bvid": "BV1C34y1i7bN",
+      "title": "0.1%的直播才会遇到的灵异BUG",
+      "quality_score": 92.12,
+      "usability": "high"
+    }
+  ],
+  "note": "The public repo keeps audit summaries and candidate tables only. Full transcript JSONL exports stay out of git."
+}

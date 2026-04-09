@@ -1,0 +1,18 @@
+usability	quality_score	bvid	title	model	segment_count	char_count	path
+high	98.06	BV1ty4y1T7Vy	【自首】从商场出来后发现不小心偷了东西……	large-v3	126	1079	sources/transcripts/bilibili_largev3_round3/BV1ty4y1T7Vy 【自首】从商场出来后发现不小心偷了东西…….json
+high	97.59	BV1Cb4y1r7uL	总被吐槽说话口齿不清的taffy一气之下发明了这个……！	large-v3	133	808	sources/transcripts/bilibili_largev3_round1/BV1Cb4y1r7uL 总被吐槽说话口齿不清的taffy一气之下发明了这个……！.json
+high	96.98	BV1VR4y1375h	如何快速融入V圈？V圈常用语小课堂	large-v3	447	2339	sources/transcripts/bilibili_largev3_round1/BV1VR4y1375h 如何快速融入V圈？V圈常用语小课堂.json
+high	93.91	BV1sB4y1K7Du	【全熟】王牌级首播出道回！taffy从1885年来开始直播了！	large-v3	1012	7789	sources/transcripts/bilibili_largev3_longform/BV1sB4y1K7Du 【全熟】王牌级首播出道回！taffy从1885年来开始直播了！.json
+high	92.72	BV1AP4y147tx	地球灭亡前60秒！taffy会做什么？（全结局）	large-v3	245	1603	sources/transcripts/bilibili_largev3_longform2/BV1AP4y147tx 地球灭亡前60秒！taffy会做什么？（全结局）.json
+high	92.12	BV1C34y1i7bN	0.1%的直播才会遇到的灵异BUG	large-v3	75	632	sources/transcripts/bilibili_largev3_round2/BV1C34y1i7bN 0.1%的直播才会遇到的灵异BUG.json
+high	85.67	BV1pF411J75p	玩一下粉丝学做游戏10天做出的I Wanna	large-v3	177	978	sources/transcripts/bilibili_largev3_longform3/BV1pF411J75p 玩一下粉丝学做游戏10天做出的I Wanna.json
+high	80.56	BV1P44y117Uk	虚拟发明家惨遭虚拟绑架！	large-v3	60	391	sources/transcripts/bilibili_largev3_round3/BV1P44y117Uk 虚拟发明家惨遭虚拟绑架！.json
+medium	69.91	BV1dR4y1773o	初次见面！熬夜录了一个自我介绍！	large-v3	52	389	sources/transcripts/bilibili_largev3_round1/BV1dR4y1773o 初次见面！熬夜录了一个自我介绍！.json
+medium	68.05	BV1DL411g74n	为什么要用这个声音讲话？因为本音你们都不喜欢啊……	large-v3	30	293	sources/transcripts/bilibili_largev3_round3/BV1DL411g74n 为什么要用这个声音讲话？因为本音你们都不喜欢啊…….json
+medium	61.53	BV1Y3DwBnEWP	网上说说得了，现实里谁不想当雏草姬？一起来关注塔菲喵！	small	23	294	sources/transcripts/bilibili_batch_retry/BV1Y3DwBnEWP 网上说说得了，现实里谁不想当雏草姬？一起来关注塔菲喵！.json
+medium	60.18	BV17S4y1V7me	【师父】有手就行的一命打败最终BOSS攻略	large-v3	17	207	sources/transcripts/bilibili_largev3_round4/BV17S4y1V7me 【师父】有手就行的一命打败最终BOSS攻略.json
+medium	59.58	BV1heDGBLE9K	网恋不？taffy的身材很曼妙！	small	38	263	sources/transcripts/1775381940_BV1heDGBLE9K_网恋不？taffy的身材很曼妙！.json
+medium	56.83	BV1da4y1z71i	这是她初见魂1塞恩古城的精神状态	large-v3	23	143	sources/transcripts/bilibili_largev3_round4/BV1da4y1z71i 这是她初见魂1塞恩古城的精神状态.json
+medium	55.2	BV1NC4y1n7dY	VR直播中误开摄像头喵？！	large-v3	12	99	sources/transcripts/bilibili_largev3_round2/BV1NC4y1n7dY VR直播中误开摄像头喵？！.json
+medium	53.93	BV15V4y197HD	爸爸！妈妈！雏草姬！	large-v3	16	122	sources/transcripts/bilibili_largev3_round2/BV15V4y197HD 爸爸！妈妈！雏草姬！.json
+medium	40.71	BV1o8XQBMEDN	讨口子有股味喵！	large-v3	4	54	sources/transcripts/bilibili_largev3_round4/BV1o8XQBMEDN 讨口子有股味喵！.json

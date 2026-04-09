@@ -1,0 +1,21 @@
+usability	quality_score	bvid	title	model	vad_filter	segment_count	char_count	cjk_ratio	unique_segment_ratio	top_repeat_ratio	chars_per_minute	path
+high	98.06	BV1ty4y1T7Vy	【自首】从商场出来后发现不小心偷了东西……	large-v3	True	126	1079	0.9286	1.00	0.0079	308.87	sources/transcripts/bilibili_largev3_round3/BV1ty4y1T7Vy 【自首】从商场出来后发现不小心偷了东西…….json
+high	97.59	BV1Cb4y1r7uL	总被吐槽说话口齿不清的taffy一气之下发明了这个……！	large-v3	True	133	808	0.9876	0.9173	0.0226	143.72	sources/transcripts/bilibili_largev3_round1/BV1Cb4y1r7uL 总被吐槽说话口齿不清的taffy一气之下发明了这个……！.json
+high	96.98	BV1VR4y1375h	如何快速融入V圈？V圈常用语小课堂	large-v3	True	447	2339	0.9778	0.8993	0.0224	178.75	sources/transcripts/bilibili_largev3_round1/BV1VR4y1375h 如何快速融入V圈？V圈常用语小课堂.json
+high	93.91	BV1sB4y1K7Du	【全熟】王牌级首播出道回！taffy从1885年来开始直播了！	large-v3	True	1012	7789	0.8259	0.9298	0.0168	133.31	sources/transcripts/bilibili_largev3_longform/BV1sB4y1K7Du 【全熟】王牌级首播出道回！taffy从1885年来开始直播了！.json
+high	92.72	BV1AP4y147tx	地球灭亡前60秒！taffy会做什么？（全结局）	large-v3	True	245	1603	0.9763	0.9796	0.0163	84.31	sources/transcripts/bilibili_largev3_longform2/BV1AP4y147tx 地球灭亡前60秒！taffy会做什么？（全结局）.json
+high	92.12	BV1C34y1i7bN	0.1%的直播才会遇到的灵异BUG	large-v3	True	75	632	0.9668	0.9867	0.0267	146.27	sources/transcripts/bilibili_largev3_round2/BV1C34y1i7bN 0.1%的直播才会遇到的灵异BUG.json
+high	85.67	BV1pF411J75p	玩一下粉丝学做游戏10天做出的I Wanna	large-v3	True	177	978	0.9703	0.9040	0.0282	53.37	sources/transcripts/bilibili_largev3_longform3/BV1pF411J75p 玩一下粉丝学做游戏10天做出的I Wanna.json
+high	80.56	BV1P44y117Uk	虚拟发明家惨遭虚拟绑架！	large-v3	True	60	391	0.9744	1.00	0.0167	82.27	sources/transcripts/bilibili_largev3_round3/BV1P44y117Uk 虚拟发明家惨遭虚拟绑架！.json
+medium	69.91	BV1dR4y1773o	初次见面！熬夜录了一个自我介绍！	large-v3	True	52	389	0.4884	0.9038	0.0577	263.50	sources/transcripts/bilibili_largev3_round1/BV1dR4y1773o 初次见面！熬夜录了一个自我介绍！.json
+medium	68.05	BV1DL411g74n	为什么要用这个声音讲话？因为本音你们都不喜欢啊……	large-v3	True	30	293	0.7372	0.9333	0.0667	113.54	sources/transcripts/bilibili_largev3_round3/BV1DL411g74n 为什么要用这个声音讲话？因为本音你们都不喜欢啊…….json
+medium	61.53	BV1Y3DwBnEWP	网上说说得了，现实里谁不想当雏草姬？一起来关注塔菲喵！	small	False	23	294	0.9524	0.5652	0.2609	260.11	sources/transcripts/bilibili_batch_retry/BV1Y3DwBnEWP 网上说说得了，现实里谁不想当雏草姬？一起来关注塔菲喵！.json
+medium	60.18	BV17S4y1V7me	【师父】有手就行的一命打败最终BOSS攻略	large-v3	True	17	207	0.9420	1.00	0.0588	56.48	sources/transcripts/bilibili_largev3_round4/BV17S4y1V7me 【师父】有手就行的一命打败最终BOSS攻略.json
+medium	59.58	BV1heDGBLE9K	网恋不？taffy的身材很曼妙！	small	None	38	263	0.7833	0.9211	0.0789	50.40	sources/transcripts/1775381940_BV1heDGBLE9K_网恋不？taffy的身材很曼妙！.json
+medium	56.83	BV1da4y1z71i	这是她初见魂1塞恩古城的精神状态	large-v3	True	23	143	1.00	1.00	0.0435	24.56	sources/transcripts/bilibili_largev3_round4/BV1da4y1z71i 这是她初见魂1塞恩古城的精神状态.json
+medium	55.20	BV1NC4y1n7dY	VR直播中误开摄像头喵？！	large-v3	True	12	99	0.9697	1.00	0.0833	45.86	sources/transcripts/bilibili_largev3_round2/BV1NC4y1n7dY VR直播中误开摄像头喵？！.json
+medium	53.93	BV15V4y197HD	爸爸！妈妈！雏草姬！	large-v3	True	16	122	1.00	1.00	0.0625	22.44	sources/transcripts/bilibili_largev3_round2/BV15V4y197HD 爸爸！妈妈！雏草姬！.json
+medium	40.71	BV1o8XQBMEDN	讨口子有股味喵！	large-v3	True	4	54	0.8704	1.00	0.25	11.24	sources/transcripts/bilibili_largev3_round4/BV1o8XQBMEDN 讨口子有股味喵！.json
+low	25.04	BV1pmDgBZEsZ	跳跃不是罪过跳跃不是罪过跳跃不是罪过	small	None	1	37	0.1622	1.00	1.00	173.83	sources/transcripts/1775363400_BV1pmDgBZEsZ_跳跃不是罪过跳跃不是罪过跳跃不是罪过.json
+low	13.51	BV1N3411L7j1	【艾尔登法环】单挑近战双大曲武士莽过女武神！	large-v3	False	113	116	0.0345	0.0177	0.9912	28.77	sources/transcripts/bilibili_largev3_round4/BV1N3411L7j1 【艾尔登法环】单挑近战双大曲武士莽过女武神！.json
+low	6.66	BV1juDLBFE6T	对你讲~啊啊啊🤩	small	None	1	6	0.00	1.00	1.00	37.72	sources/transcripts/1775646006_BV1juDLBFE6T_对你讲~啊啊啊🤩.json

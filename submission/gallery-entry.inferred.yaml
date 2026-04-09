@@ -1,0 +1,46 @@
+slug: ace-taffy
+type: skill
+title:
+  zh: ace-taffy
+  en: ace-taffy
+subtitle:
+  zh: 永雏塔菲 / 虚拟偶像 / 单机区主播
+  en: Yongchu Taffy / Virtual Idol / Variety Gamer
+culture:
+  zh: 其他
+  en: Other
+description:
+  zh: 基于永雏塔菲在微博和 Bilibili 官方公开内容蒸馏的人格 skill，适合公开语境对话、动态文案、开播预告、短视频口播和字幕工作流。
+  en: A persona skill distilled from Yongchu Taffy's official public Weibo and Bilibili content, suitable for public-facing chat, short copywriting, stream notices, voiceover scripting, and subtitle workflows.
+categories:
+  - other
+traits:
+  - zh: 戏剧播报
+    en: Incident Broadcast
+  - zh: 偶像主播双定位
+    en: Idol-Gamer Hybrid
+  - zh: 互动拿捏
+    en: Playful Tease
+repo:
+  url: https://github.com/ly-xxx/taffy.skill
+  has_skill_file: true
+author:
+  github_username: ly-xxx
+  display_name: ly-xxx
+usage:
+  command: /ace-taffy
+sources:
+  - https://weibo.com/acetaffy
+  - https://space.bilibili.com/1265680561
+  - https://live.bilibili.com/22603245
+stt:
+  backend: faster-whisper
+  exports:
+    - json
+    - srt
+    - vtt
+    - tsv
+    - txt
+notes:
+  - This file is inferred from the live gallery fields because the submit-skill issue template could not be fetched directly from the current network environment.
+  - Replace the repo URL only if the final GitHub repository uses a different repo name.

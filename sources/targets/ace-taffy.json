@@ -1,0 +1,64 @@
+{
+  "slug": "ace-taffy",
+  "display_name": "永雏塔菲",
+  "mode": "public-figure",
+  "canonical_sources": {
+    "weibo": {
+      "uid": "7618923072",
+      "domain": "acetaffy",
+      "url": "https://weibo.com/acetaffy"
+    },
+    "bilibili": {
+      "mid": "1265680561",
+      "space_url": "https://space.bilibili.com/1265680561",
+      "room_id": "22603245",
+      "live_url": "https://live.bilibili.com/22603245"
+    }
+  },
+  "preferred_tooling": {
+    "weibo": {
+      "primary": "tools/collect_weibo_public.py via public HTML spider fallback",
+      "fallback": "uvx --from mcp-server-weibo weibo-cli"
+    },
+    "bilibili": {
+      "primary_script": "tools/collect_bilibili_public.py",
+      "profile_route": "m.bilibili.com/space/{mid}",
+      "detail_route": "m.bilibili.com/video/{bvid}",
+      "search_mcp": "npx bilibili-mcp-js",
+      "fallback_mcp": "uv run bilibili.py",
+      "rss_fallback": "RSSHub bilibili/user/video + bilibili/user/dynamic"
+    },
+    "stt": {
+      "primary_backend": "faster-whisper",
+      "optional_backends": [
+        "whisperx",
+        "funasr"
+      ]
+    }
+  },
+  "collection_defaults": {
+    "weibo_limit": 1000,
+    "weibo_comments_per_post": 10,
+    "weibo_max_pages": 120,
+    "bilibili_video_limit": 180,
+    "bilibili_comment_limit": 20,
+    "bilibili_comment_video_limit": 20,
+    "bilibili_dynamic_limit": 50,
+    "bilibili_search_pages": 12,
+    "bilibili_playurl_limit": 6,
+    "bilibili_search_keywords": [
+      "永雏塔菲",
+      "AceTaffy",
+      "雏草姬",
+      "塔菲",
+      "永雛タフィー"
+    ],
+    "transcript_formats": [
+      "json",
+      "srt",
+      "vtt",
+      "tsv",
+      "txt"
+    ]
+  }
+}

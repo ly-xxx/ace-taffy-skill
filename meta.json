@@ -1,0 +1,49 @@
+{
+  "name": "永雏塔菲",
+  "slug": "ace-taffy",
+  "version": "v0.2.0",
+  "updated_at": "2026-04-09",
+  "persona_mode": "public-figure",
+  "platforms": {
+    "weibo": {
+      "uid": "7618923072",
+      "domain": "acetaffy",
+      "url": "https://weibo.com/acetaffy"
+    },
+    "bilibili": {
+      "mid": "1265680561",
+      "space_url": "https://space.bilibili.com/1265680561",
+      "live_room_id": "22603245",
+      "live_url": "https://live.bilibili.com/22603245"
+    }
+  },
+  "source_policy": {
+    "allowed_primary_sources": [
+      "weibo official posts",
+      "bilibili official videos",
+      "bilibili official dynamics",
+      "bilibili official live room metadata",
+      "officially published subtitles or transcripts"
+    ],
+    "disallowed_sources": [
+      "unverified gossip",
+      "middle-person identity content",
+      "fan rumor threads",
+      "non-official recap videos as primary facts"
+    ]
+  },
+  "stt": {
+    "primary_backend": "faster-whisper",
+    "recommended_exports": [
+      "json",
+      "srt",
+      "vtt",
+      "tsv",
+      "txt"
+    ],
+    "optional_backends": [
+      "whisperx",
+      "funasr"
+    ]
+  }
+}

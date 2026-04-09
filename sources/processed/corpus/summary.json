@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-09",
+  "source_records": 941,
+  "transcript_records": 2751,
+  "combined_records": 3692,
+  "public_artifacts": {
+    "hotwords": "sources/processed/ace-taffy-hotwords.txt",
+    "stt_initial_prompt": "sources/processed/corpus/stt_initial_prompt.txt",
+    "audit_table": "sources/processed/transcript-audit-best-by-bvid.tsv",
+    "selected_transcripts": "sources/processed/training/selected_transcripts.tsv"
+  },
+  "note": "Full raw captures, media files, subtitle exports, and training JSONL files are intentionally excluded from the public repo."
+}
