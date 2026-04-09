@@ -41,9 +41,9 @@
     "weibo_comments_per_post": 10,
     "weibo_max_pages": 120,
     "bilibili_video_limit": 180,
-    "bilibili_comment_limit": 20,
+    "bilibili_comment_limit": 0,
     "bilibili_comment_video_limit": 20,
-    "bilibili_dynamic_limit": 50,
+    "bilibili_dynamic_limit": 300,
     "bilibili_search_pages": 12,
     "bilibili_playurl_limit": 6,
     "bilibili_search_keywords": [

@@ -25,6 +25,29 @@ def main() -> int:
         default="weibo,bilibili,corpus",
         help="Comma-separated steps: weibo,bilibili,corpus",
     )
+    parser.add_argument(
+        "--fresh",
+        action="store_true",
+        help="Ignore existing bilibili outputs and avoid fallback reuse",
+    )
+    parser.add_argument(
+        "--http-retries",
+        type=int,
+        default=6,
+        help="HTTP retry attempts passed to bilibili collector",
+    )
+    parser.add_argument(
+        "--retry-backoff",
+        type=float,
+        default=1.8,
+        help="Base retry backoff passed to bilibili collector",
+    )
+    parser.add_argument(
+        "--save-every",
+        type=int,
+        default=20,
+        help="Partial flush cadence passed to long-running bilibili steps",
+    )
     args = parser.parse_args()
 
     target_path = Path(args.target).expanduser()
@@ -57,9 +80,11 @@ def main() -> int:
     if "bilibili" in steps:
         bili = manifest["canonical_sources"]["bilibili"]
         keywords = ",".join(manifest["collection_defaults"]["bilibili_search_keywords"])
-        rc = run_step([
+        command = [
             "python3",
             str(root / "tools" / "collect_bilibili_public.py"),
+            "--target",
+            str(target_path),
             "--mid",
             bili["mid"],
             "--room-id",
@@ -78,9 +103,17 @@ def main() -> int:
             str(manifest["collection_defaults"]["bilibili_search_pages"]),
             "--playurl-limit",
             str(manifest["collection_defaults"]["bilibili_playurl_limit"]),
+            "--http-retries",
+            str(args.http_retries),
+            "--retry-backoff",
+            str(args.retry_backoff),
+            "--save-every",
+            str(args.save_every),
             "--output-dir",
             str(root / "sources" / "raw" / "bilibili"),
-        ])
+        ]
+        command.append("--fresh" if args.fresh else "--resume")
+        rc = run_step(command)
         failures += int(rc != 0)
 
     if "corpus" in steps:

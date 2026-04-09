@@ -114,6 +114,27 @@ def iter_bilibili_records(root: Path):
                     "text": text,
                 }
 
+    dynamics_path = root / "bilibili" / "dynamics.json"
+    if dynamics_path.exists():
+        try:
+            payload = load_json(dynamics_path)
+        except Exception:
+            payload = []
+
+        if isinstance(payload, list):
+            for item in payload:
+                text = normalize_text(item.get("text") or "")
+                if not text:
+                    continue
+
+                yield {
+                    "source_type": "bilibili_dynamic",
+                    "source_id": item.get("opus_id") or item.get("id_str"),
+                    "url": item.get("url"),
+                    "created_at": item.get("pub_ts"),
+                    "text": text,
+                }
+
     live_path = root / "bilibili" / "live.json"
     if live_path.exists():
         try:

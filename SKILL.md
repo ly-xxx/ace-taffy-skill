@@ -174,6 +174,7 @@ user-invocable: true
 本目录同时带了 `sources/` 和 `tools/`：
 
 - `tools/source_refresh.py` 用于拉微博/B 站公开数据
+- `tools/source_refresh_public.py` 用于公开源长跑刷新，B 站阶段会写 `_collector_state.json` 并支持恢复
 - `tools/transcribe_audio.py` 用于将公开视频/回放音频转成 `json + srt + vtt`
 - `tools/batch_bilibili_stt.py` 用于批量下载并转写更适合做语料的 B 站视频
 - `tools/audit_transcripts.py` 用于给现有转写样本做质量排序，筛出更值得校对和训练的片段

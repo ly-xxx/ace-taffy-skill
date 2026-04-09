@@ -36,15 +36,15 @@ Large raw media, full transcripts, and training JSONL files are intentionally ex
 
 ```bash
 mkdir -p ~/.codex/skills
-git clone https://github.com/ly-xxx/taffy.skill ~/.codex/skills/ace-taffy
+git clone https://github.com/ly-xxx/ace-taffy-skill.git ~/.codex/skills/ace-taffy
 ```
 
 If you want live-edit behavior during local development:
 
 ```bash
-git clone https://github.com/ly-xxx/taffy.skill ~/work/taffy.skill
+git clone https://github.com/ly-xxx/ace-taffy-skill.git ~/work/ace-taffy-skill
 mkdir -p ~/.codex/skills
-ln -s ~/work/taffy.skill ~/.codex/skills/ace-taffy
+ln -s ~/work/ace-taffy-skill ~/.codex/skills/ace-taffy
 ```
 
 Restart Codex or open a new session after installation.
@@ -55,14 +55,14 @@ Global install:
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/ly-xxx/taffy.skill ~/.claude/skills/ace-taffy
+git clone https://github.com/ly-xxx/ace-taffy-skill.git ~/.claude/skills/ace-taffy
 ```
 
 Project-local install:
 
 ```bash
 mkdir -p .claude/skills
-git clone https://github.com/ly-xxx/taffy.skill .claude/skills/ace-taffy
+git clone https://github.com/ly-xxx/ace-taffy-skill.git .claude/skills/ace-taffy
 ```
 
 ## Usage
@@ -238,6 +238,9 @@ Refresh public Weibo / Bilibili data and corpus manifests:
 python3 tools/source_refresh_public.py --target sources/targets/ace-taffy.json
 ```
 
+This now writes partial Bilibili outputs plus `sources/raw/bilibili/_collector_state.json`.
+If the run gets interrupted, rerun the same command to resume from already flushed results; use `--fresh` only when you want to discard fallback reuse.
+
 Batch download and transcribe public Bilibili videos:
 
 ```bash
@@ -254,6 +257,17 @@ Audit and build recommended training candidates:
 python3 tools/audit_transcripts.py
 python3 tools/build_training_set.py
 python3 tools/build_style_bank.py
+```
+
+For a more explicit long-running Bilibili refresh:
+
+```bash
+python3 tools/source_refresh_public.py \
+  --target sources/targets/ace-taffy.json \
+  --steps bilibili,corpus \
+  --http-retries 6 \
+  --retry-backoff 1.8 \
+  --save-every 10
 ```
 
 ### STT Output Compatibility
@@ -286,8 +300,12 @@ If you want to submit this skill to `colleague-skill-site`:
 
 - Issue draft: `submission/submit-skill-issue.md`
 - Gallery draft entry: `submission/gallery-entry.inferred.yaml`
-- Skill file URL: `https://github.com/ly-xxx/taffy.skill/blob/main/SKILL.md`
+- Skill file URL: `https://github.com/ly-xxx/ace-taffy-skill/blob/main/SKILL.md`
 
 ## License
 
 MIT. See `LICENSE`.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ly-xxx/ace-taffy-skill&type=Date)](https://star-history.com/#ly-xxx/ace-taffy-skill&Date)

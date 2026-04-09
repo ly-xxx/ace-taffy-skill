@@ -92,3 +92,17 @@
 - `sources/raw/bilibili/`
 - `sources/transcripts/`
 - `sources/processed/corpus/`
+
+## 这轮实际计数
+
+- 微博公开正文：`658` 条
+- 微博转发文案：`102` 条
+- Bilibili 视频详情：`180` 条
+- Bilibili 空间动态：`149` 条
+- 直播间公开信息：`1` 条
+- 当前公开 source corpus：`1090` 条
+
+## 恢复说明
+
+- 使用当前仓库的 `tools/collect_bilibili_public.py` 或 `tools/source_refresh_public.py` 刷新时，会写 `sources/raw/bilibili/_collector_state.json`
+- 即使中途断开，也可以保留中间产物后继续续跑
