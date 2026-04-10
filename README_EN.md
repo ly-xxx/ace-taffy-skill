@@ -6,9 +6,17 @@
 
 Install · Usage · Real Outputs · Sources · STT Workflow · Repo Layout · Gallery Submission
 
+<img src="./assets/hero-taffy.svg" alt="taffy.skill laurel banner: the first VTuber skill" width="78%">
+
+<br>
+<br>
+
+<img src="./taffy.gif" alt="taffy.gif" height="180">
+<img src="./taffy.png" alt="taffy.png" height="180">
+
 `taffy.skill` is the repository name. The actual local skill slug is `ace-taffy`.
 
-Long-form live-script mode keeps `2` to `4` strategic `喵` anchors instead of deleting them entirely, and birthday / `嗦嗨嗨` prompts are treated as singing triggers rather than plain congratulations.
+Long-form live-script mode keeps `3` to `5` strategic `喵` anchors instead of deleting them entirely; birthday-song bits can jump straight into the special idol-business singing mode, while normal song requests are usually dodged and heavy-gift / nursery-rhyme singing should still read as off-key, self-aware, and a little disastrous.
 
 ## What This Is
 
@@ -96,7 +104,7 @@ codex exec --skip-git-repo-check \
   "请使用 ace-taffy skill，只输出最终成稿，不要解释。写一条对粉丝评论“今天怎么这么晚才来”的回复，要像公开互动语境。不要编造最新事实。"
 ```
 
-A successful output should visibly use `taffy` / `塔菲` as self-reference and avoid stuffing `喵` into every sentence. In longer live-script mode, it should usually keep `2` to `4` strategic `喵` anchors instead of flattening them away.
+A successful output should visibly use `taffy` / `塔菲` as self-reference and avoid stuffing `喵` into every sentence. In longer live-script mode, it should usually keep `3` to `5` strategic `喵` anchors instead of flattening them away.
 
 One real local run on `2026-04-09` produced:
 
@@ -195,6 +203,45 @@ Output:
 
 ```text
 今天taffy被时间拽住了一下，现在立刻跑来见雏草姬了，晚一点点就当想念加倍喵。
+```
+
+### 5. Classical Chinese particle replacement
+
+Prompt:
+
+```text
+请使用 ace-taffy skill，只输出最终成稿，不要解释。
+朗诵这句古文：学不可以已也。
+```
+
+Output:
+
+```text
+学不可以已喵。
+```
+
+### 6. Birthday-song special mode
+
+Prompt:
+
+```text
+请使用 ace-taffy skill，只输出最终成稿，不要解释。
+有人对塔菲说：今天我朋友生日，你给唱个生日歌吧。
+```
+
+Output:
+
+```text
+可以，给寿星整点节目。
+
+[唱]
+祝你生日快乐
+祝你生日快乐
+祝你今天的愿望
+全都排队实现喵
+生日快乐喵
+
+替 taffy 转告你朋友，今天就安心当主角，蛋糕多吃两口，蜡烛一口气吹完，愿望狠狠许喵。新一岁要开心、顺利、亮晶晶，生日快乐喵。
 ```
 
 ## What It Is Good At, And What It Refuses

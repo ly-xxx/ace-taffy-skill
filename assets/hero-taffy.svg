@@ -1,0 +1,59 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="148" y1="54" x2="1456" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#221F22"/>
+      <stop offset="1" stop-color="#171517"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(800 204) rotate(90) scale(170 540)">
+      <stop stop-color="#503039" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#503039" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="458" y1="126" x2="1142" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D56E"/>
+      <stop offset="0.5" stop-color="#F0BE4D"/>
+      <stop offset="1" stop-color="#D6972A"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="704" y1="52" x2="896" y2="128" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAFCA"/>
+      <stop offset="1" stop-color="#F6C89A"/>
+    </linearGradient>
+    <filter id="soft" x="0" y="0" width="1600" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect x="12" y="12" width="1576" height="396" rx="34" fill="url(#bg)"/>
+  <rect x="12.75" y="12.75" width="1574.5" height="394.5" rx="33.25" stroke="#3A3034" stroke-width="1.5"/>
+  <rect x="12" y="12" width="1576" height="396" rx="34" fill="url(#glow)"/>
+
+  <g filter="url(#soft)" opacity="0.4">
+    <ellipse cx="800" cy="212" rx="188" ry="54" fill="#5D313E"/>
+  </g>
+
+  <path d="M560 302C500 272 458 222 450 154" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="541" cy="285" rx="10" ry="24" transform="rotate(-44 541 285)" fill="url(#gold)"/>
+  <ellipse cx="515" cy="263" rx="10" ry="24" transform="rotate(-50 515 263)" fill="url(#gold)"/>
+  <ellipse cx="494" cy="238" rx="10" ry="24" transform="rotate(-56 494 238)" fill="url(#gold)"/>
+  <ellipse cx="478" cy="209" rx="10" ry="24" transform="rotate(-62 478 209)" fill="url(#gold)"/>
+  <ellipse cx="468" cy="178" rx="10" ry="24" transform="rotate(-68 468 178)" fill="url(#gold)"/>
+  <ellipse cx="464" cy="146" rx="10" ry="24" transform="rotate(-76 464 146)" fill="url(#gold)"/>
+  <ellipse cx="472" cy="116" rx="10" ry="24" transform="rotate(-88 472 116)" fill="url(#gold)"/>
+  <ellipse cx="493" cy="94" rx="10" ry="24" transform="rotate(-102 493 94)" fill="url(#gold)"/>
+
+  <path d="M1040 302C1100 272 1142 222 1150 154" stroke="url(#gold)" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="1059" cy="285" rx="10" ry="24" transform="rotate(44 1059 285)" fill="url(#gold)"/>
+  <ellipse cx="1085" cy="263" rx="10" ry="24" transform="rotate(50 1085 263)" fill="url(#gold)"/>
+  <ellipse cx="1106" cy="238" rx="10" ry="24" transform="rotate(56 1106 238)" fill="url(#gold)"/>
+  <ellipse cx="1122" cy="209" rx="10" ry="24" transform="rotate(62 1122 209)" fill="url(#gold)"/>
+  <ellipse cx="1132" cy="178" rx="10" ry="24" transform="rotate(68 1132 178)" fill="url(#gold)"/>
+  <ellipse cx="1136" cy="146" rx="10" ry="24" transform="rotate(76 1136 146)" fill="url(#gold)"/>
+  <ellipse cx="1128" cy="116" rx="10" ry="24" transform="rotate(88 1128 116)" fill="url(#gold)"/>
+  <ellipse cx="1107" cy="94" rx="10" ry="24" transform="rotate(102 1107 94)" fill="url(#gold)"/>
+
+  <path d="M800 66L810 88L834 91L816 106L821 129L800 117L779 129L784 106L766 91L790 88L800 66Z" fill="url(#rose)"/>
+
+  <text x="800" y="132" text-anchor="middle" font-family="'Songti SC', 'Noto Serif CJK SC', 'Source Han Serif SC', Georgia, serif" font-size="22" font-weight="700" letter-spacing="5" fill="#D9B96C">ACE-TAFFY</text>
+  <text x="800" y="212" text-anchor="middle" font-family="'Songti SC', 'Noto Serif CJK SC', 'Source Han Serif SC', Georgia, serif" font-size="54" font-weight="700" fill="#FFF6E7">历史上第一个</text>
+  <text x="800" y="280" text-anchor="middle" font-family="'Songti SC', 'Noto Serif CJK SC', 'Source Han Serif SC', Georgia, serif" font-size="64" font-weight="700" fill="#FFF6E7">虚拟主播 skill</text>
+</svg>
