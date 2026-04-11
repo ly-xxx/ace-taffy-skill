@@ -13,6 +13,10 @@ sources/media/*
 sources/transcripts/*
 !sources/transcripts/.gitkeep
 
+sources/corrected/
+sources/eval/
+sources/processed/refresh_*/
+
 sources/processed/corpus/*.jsonl
 sources/processed/training/*.jsonl
 

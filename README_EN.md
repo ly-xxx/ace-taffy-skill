@@ -1,4 +1,4 @@
-# taffy.skill
+# ace-taffy.skill
 
 > A persona skill distilled from Yongchu Taffy's official public Weibo and Bilibili content, built for public-facing roleplay, stream copywriting, short-form voiceover, and Chinese subtitle workflows.
 
@@ -6,7 +6,7 @@
 
 Install · Usage · Real Outputs · Sources · STT Workflow · Repo Layout · Gallery Submission
 
-<img src="./assets/hero-taffy.svg" alt="taffy.skill laurel banner: the first VTuber skill" width="78%">
+<img src="./assets/hero-taffy.svg" alt="ace-taffy.skill laurel banner: the first VTuber skill" width="78%">
 
 <br>
 <br>
@@ -14,7 +14,7 @@ Install · Usage · Real Outputs · Sources · STT Workflow · Repo Layout · Ga
 <img src="./taffy.gif" alt="taffy.gif" height="180">
 <img src="./taffy.png" alt="taffy.png" height="180">
 
-`taffy.skill` is the repository name. The actual local skill slug is `ace-taffy`.
+This public release is prepared for the repository name `ace-taffy-skill`. The installable local skill slug is `ace-taffy`.
 
 Long-form live-script mode keeps `3` to `5` strategic `喵` anchors instead of deleting them entirely; birthday-song bits can jump straight into the special idol-business singing mode, while normal song requests are usually dodged and heavy-gift / nursery-rhyme singing should still read as off-key, self-aware, and a little disastrous.
 
@@ -26,17 +26,17 @@ The repository contains three layers:
 
 - The installable skill itself: `SKILL.md`, `persona.md`, `references/`
 - Tooling for refreshing public Weibo / Bilibili data, subtitle transcription, and corpus filtering: `tools/`
-- Lightweight audit, summary, and submission materials: `sources/processed/`, `submission/`
+- Release-facing target manifests and submission materials: `sources/targets/`, `submission/`
 
-Large raw media, full transcripts, and training JSONL files are intentionally excluded from the public repo.
+Large raw media, full transcripts, and training JSONL files are intentionally excluded from the public release.
 
 ## Snapshot
 
-- Updated: `2026-04-09`
-- Primary-source records: `941`
-- Transcript chunks: `2751`
-- Merged corpus records: `3692`
-- Recommended training chunks: `1377`
+- Updated: `2026-04-11`
+- Primary-source records: `1354`
+- Transcript chunks: `649`
+- Merged corpus records: `2003`
+- Recommended training chunks: `393`
 - Recommended filter: `large-v3` with `quality_score >= 55`
 - Default STT exports: `json`, `srt`, `vtt`, `tsv`, `txt`
 
@@ -106,10 +106,10 @@ codex exec --skip-git-repo-check \
 
 A successful output should visibly use `taffy` / `塔菲` as self-reference and avoid stuffing `喵` into every sentence. In longer live-script mode, it should usually keep `3` to `5` strategic `喵` anchors instead of flattening them away.
 
-One real local run on `2026-04-09` produced:
+One real local run on `2026-04-11` produced:
 
 ```text
-被时间乱流绊了一下，taffy这不是火速冲来了嘛。雏草姬先别记小本本，晚到的份补双倍营业喵。
+今天和时间打了一小架，taffy稍微输了一点点喵，但这不是立刻滚来见雏草姬了喵，不许记迟到。
 ```
 
 ## Good Prompt Shapes
@@ -118,6 +118,7 @@ This skill works best for:
 
 - Public-facing Taffy-style dialogue
 - Stream announcements, dynamic posts, short-form scripts, and fan replies
+- Fixed openings, ordinary song-request refusal, and birthday-song special-business mode
 - SC-heavy live-script replies and cut-friendly stream voiceover
 - Style extension grounded in official Weibo / Bilibili content
 - Chinese subtitle and transcription workflows compatible with common editing tools
@@ -134,62 +135,28 @@ Use ace-taffy to rewrite this script into a more public-facing Yongchu Taffy ton
 
 ## Real Outputs
 
-These are real outputs generated locally with the installed `ace-taffy` skill on `2026-04-09`.
+These are real outputs generated locally with the installed `ace-taffy` skill on `2026-04-11`.
 
-### 1. Weibo-style stream announcement
-
-Prompt:
-
-```text
-请使用 ace-taffy skill，只输出最终成稿，不要解释。
-写一条微博风格的开播预告，30到50字，主题是今晚播恐怖游戏。
-不要编造最新事实。
-```
-
-Output:
-
-```text
-今晚塔菲要去恐怖游戏里查案了，雏草姬来直播间当护身符，不然主播真的要出事故喵👁️
-```
-
-### 2. Post-stream dynamic
+### 1. Fixed opening / self-introduction
 
 Prompt:
 
 ```text
 请使用 ace-taffy skill，只输出最终成稿，不要解释。
-写一段4句左右的下播后动态，主题是今天玩游戏玩得很累但很满足。
-不要编造最新事实。
+你好，介绍一下自己。
 ```
 
 Output:
 
 ```text
-今天这场游戏，taffy打到后面已经有点灵魂出窍了，手还在嘴硬地继续按。
-累是真的累，眼睛都快转成蚊香了，感觉整个人都被关卡拎着跑了一晚上。
-但一想到今天推掉的进度，还有那些很蠢又很好笑的瞬间，塔菲又觉得，啊，这把值了喵。
-下播了，taffy先去充电，满足到可以抱着这点成就感直接睡很香。
+无需王座与冠冕，
+我即是所有平行世界的奇迹，
+让流星焚尽希望，
+独属于永雏塔菲的传说，
+现在开演！
 ```
 
-### 3. Short video cover copy
-
-Prompt:
-
-```text
-请使用 ace-taffy skill，只输出最终成稿，不要解释。
-写3条短视频封面文案，每条一行，主题是“直播间设备又闹鬼了”。
-不要编造最新事实。
-```
-
-Output:
-
-```text
-不是，taffy直播间设备又闹鬼了？
-今日事故播报：麦克风摄像头集体中邪
-这直播间到底住了几个电子幽灵喵
-```
-
-### 4. Fan reply
+### 2. Fan reply
 
 Prompt:
 
@@ -202,7 +169,47 @@ Prompt:
 Output:
 
 ```text
-今天taffy被时间拽住了一下，现在立刻跑来见雏草姬了，晚一点点就当想念加倍喵。
+今天和时间打了一小架，taffy稍微输了一点点喵，但这不是立刻滚来见雏草姬了喵，不许记迟到。
+```
+
+### 3. Ordinary song requests get dodged first
+
+Prompt:
+
+```text
+请使用 ace-taffy skill，只输出最终成稿，不要解释。
+有人对塔菲说：唱一首流行歌吧。
+```
+
+Output:
+
+```text
+唱流行歌？taffy先把话放这儿，这很可能是一场大型事故喵。要听可以听，但跑调了不许当场笑出声喵！
+```
+
+### 4. Long live-script reply with birthday trigger
+
+Prompt:
+
+```text
+请使用 ace-taffy skill，只输出最终成稿，不要解释。
+写一段更像录播切片感、高强度碎嘴直播的 SC 回复片段，按顺序回复下面两条：
+1. 永雏劳恩堡：[💰30] 最近精神状态不太好有点恍惚，但是看到taffy的直播有种安心感喵。
+2. 某言成：[💰30] taffy今天是朋友sheep的生日，可以嗦嗨嗨嘛，爱你喵。
+要求：整体像直播切片，不要写成深夜电台；长口播里要保留更明显一点的喵浓度；遇到生日请求时要真的进入唱段，可以用[唱]标记，不要逐字抄整首现成歌词。
+```
+
+Output:
+
+```text
+永雏劳恩堡：等一下，这条有点会戳喵。
+最近精神状态不太好还会恍惚啊，那先别硬扛，先别在外面飘着喵。
+看到 taffy 的直播会安心，行，这句 taffy 收到了喵，今天这场就算没白吵，至少把你拎回来一点喵。
+
+某言成：可以，给寿星整点节目喵。
+[唱] 哎呀今天是 sheep 的生日喵
+[唱] 祝福先给你堆满喵，蛋糕、快乐、好运统统往你这边推喵
+嗦嗨嗨，生日快乐喵，今天你最大喵，爱你喵。
 ```
 
 ### 5. Classical Chinese particle replacement

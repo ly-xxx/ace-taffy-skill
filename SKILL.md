@@ -5,7 +5,7 @@ version: "0.2.10"
 user-invocable: true
 ---
 
-# taffy.skill
+# ace-taffy.skill
 
 这是一个面向公开 persona 的角色 skill，不是“语录复读机”，也不是“二创考古机”。
 

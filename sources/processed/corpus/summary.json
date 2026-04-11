@@ -1,10 +1,13 @@
 {
-  "source_records": 1090,
-  "transcript_records": 0,
-  "combined_records": 1090,
-  "transcript_jsonl": "sources/processed/corpus/transcript_corpus.jsonl",
-  "source_jsonl": "sources/processed/corpus/source_text_corpus.jsonl",
-  "combined_jsonl": "sources/processed/corpus/combined_corpus.jsonl",
-  "hot_phrases": "sources/processed/corpus/hot_phrases.txt",
-  "stt_initial_prompt": "sources/processed/corpus/stt_initial_prompt.txt"
+  "target": "/home/lyx/skill/ace-taffy-skill/sources/targets/ace-taffy.json",
+  "target_slug": "ace-taffy",
+  "source_records": 1354,
+  "transcript_records": 649,
+  "combined_records": 2003,
+  "transcript_jsonl": "/home/lyx/skill/ace-taffy-skill/sources/processed/corpus/transcript_corpus.jsonl",
+  "source_jsonl": "/home/lyx/skill/ace-taffy-skill/sources/processed/corpus/source_text_corpus.jsonl",
+  "combined_jsonl": "/home/lyx/skill/ace-taffy-skill/sources/processed/corpus/combined_corpus.jsonl",
+  "hot_phrases": "/home/lyx/skill/ace-taffy-skill/sources/processed/corpus/hot_phrases.txt",
+  "stt_initial_prompt": "/home/lyx/skill/ace-taffy-skill/sources/processed/corpus/stt_initial_prompt.txt",
+  "exported_hotwords": "/home/lyx/skill/ace-taffy-skill/sources/processed/ace-taffy-hotwords.txt"
 }

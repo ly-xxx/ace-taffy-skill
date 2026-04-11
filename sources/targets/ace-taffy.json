@@ -40,7 +40,7 @@
     "weibo_limit": 1000,
     "weibo_comments_per_post": 10,
     "weibo_max_pages": 120,
-    "bilibili_video_limit": 180,
+    "bilibili_video_limit": 500,
     "bilibili_comment_limit": 0,
     "bilibili_comment_video_limit": 20,
     "bilibili_dynamic_limit": 300,
@@ -60,5 +60,166 @@
       "tsv",
       "txt"
     ]
+  },
+  "style_hints": {
+    "aliases": [
+      "永雏塔菲",
+      "塔菲",
+      "taffy",
+      "AceTaffy",
+      "永雛タフィー"
+    ],
+    "self_reference": [
+      "taffy",
+      "塔菲"
+    ],
+    "fandom_aliases": [
+      "雏草姬"
+    ],
+    "balance_axes": [
+      "虚拟偶像营业感",
+      "碎嘴杂谈直播感",
+      "事故播报式复盘",
+      "嘴硬吐槽和轻度关怀并存"
+    ],
+    "key_phrases": [
+      "永雏塔菲",
+      "塔菲",
+      "taffy",
+      "AceTaffy",
+      "雏草姬",
+      "喵",
+      "一只"
+    ],
+    "motif_phrases": [
+      "对你讲",
+      "你看吧",
+      "不是",
+      "唉"
+    ],
+    "story_openers": [
+      "今天",
+      "刚刚",
+      "最近",
+      "前两天",
+      "对了"
+    ],
+    "incident_terms": [
+      "直播",
+      "开播",
+      "下播",
+      "翻车",
+      "出事",
+      "节目效果"
+    ],
+    "reaction_pivots": [
+      "唉",
+      "不是",
+      "等一下",
+      "诶",
+      "你看吧",
+      "对你讲"
+    ],
+    "category_rules": {}
+  },
+  "voice_pipeline": {
+    "stt_hotwords": [
+      "永雏塔菲",
+      "塔菲",
+      "taffy",
+      "AceTaffy",
+      "雏草姬",
+      "永雛タフィー",
+      "喵",
+      "一只"
+    ],
+    "transcript_formats": [
+      "json",
+      "srt",
+      "vtt",
+      "tsv",
+      "txt"
+    ],
+    "persona_correction": {
+      "canonical_terms": [
+        {
+          "id": "fan_name_001",
+          "canonical": "雏草姬",
+          "category": "fan_name",
+          "reason": "core_fandom_name",
+          "confusions": [
+            "除草鸡",
+            "除草雞",
+            "除草姬",
+            "出草鸡",
+            "出草雞",
+            "出草姬",
+            "锄草鸡",
+            "锄草雞",
+            "锄草姬"
+          ]
+        },
+        {
+          "id": "community_term_001",
+          "canonical": "YLG",
+          "category": "community_term",
+          "reason": "community_abbreviation",
+          "confusions": [
+            "眼油",
+            "眼友"
+          ]
+        }
+      ],
+      "literal_rules": [
+        {
+          "id": "community_term_002",
+          "sources": [
+            "一只眼油",
+            "一隻眼油",
+            "一只眼友",
+            "一隻眼友"
+          ],
+          "replacement": "YLG",
+          "reason": "community_abbreviation_phrase"
+        }
+      ],
+      "flat_lexicon_terms": [
+        {
+          "id": "self_ref_flat_001",
+          "sources": [
+            "特别",
+            "特別"
+          ],
+          "replacement": "taffy",
+          "reason": "flat_baseline_self_reference_confusion"
+        }
+      ],
+      "regex_rules": [
+        {
+          "id": "self_ref_001",
+          "pattern": "(^|[，。！？、…“”‘’\\s]|所以|然後|然后|就是|啊)特[别別](?=(今天|前两天|前兩天|刚刚|剛剛|要|来|來|感[觉覺]|覺得|觉得|對|对|放|現在|现在|突然|不小心|就|也|來教|来教|當時|当时|家里|家裡|说|說|先))",
+          "replacement": "\\1taffy",
+          "reason": "clause_initial_self_reference_confusion"
+        },
+        {
+          "id": "self_ref_002",
+          "pattern": "(?<=的)特[别別](?=(也要|感[觉覺]|覺得|觉得|逗笑|说|說))",
+          "replacement": "taffy",
+          "reason": "possessive_self_reference_confusion"
+        },
+        {
+          "id": "self_ref_003",
+          "pattern": "(?<=把)特[别別](?=逗笑)",
+          "replacement": "taffy",
+          "reason": "object_self_reference_confusion"
+        },
+        {
+          "id": "self_ref_004",
+          "pattern": "(?<=老观众)特[别別](?=(放这里|放這裡))",
+          "replacement": "taffy",
+          "reason": "audience_address_self_reference_confusion"
+        }
+      ]
+    }
   }
 }

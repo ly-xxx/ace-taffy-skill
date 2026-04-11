@@ -1,8 +1,8 @@
 slug: ace-taffy
 type: skill
 title:
-  zh: ace-taffy
-  en: ace-taffy
+  zh: 永雏塔菲.skill
+  en: ace-taffy.skill
 subtitle:
   zh: 永雏塔菲 / 虚拟偶像 / 单机区主播
   en: Yongchu Taffy / Virtual Idol / Variety Gamer
@@ -22,7 +22,7 @@ traits:
   - zh: 互动拿捏
     en: Playful Tease
 repo:
-  url: https://github.com/ly-xxx/taffy.skill
+  url: https://github.com/ly-xxx/ace-taffy-skill
   has_skill_file: true
 author:
   github_username: ly-xxx
@@ -43,4 +43,4 @@ stt:
     - txt
 notes:
   - This file is inferred from the live gallery fields because the submit-skill issue template could not be fetched directly from the current network environment.
-  - Replace the repo URL only if the final GitHub repository uses a different repo name.
+  - The repo URL is already aligned to the intended public release repository name `ace-taffy-skill`.
